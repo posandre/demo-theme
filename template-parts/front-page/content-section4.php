@@ -12,7 +12,7 @@ $button_link = demo_theme_get_acf_field('section4_button_link', $post_id, __('ht
 
 <section class="section section-4">
     <div class="section__title section-4__title"><?php echo $title; ?></div>
-    <div class="section__two-colons section-4__two-colons">
+    <div class="section__two-colons-row section-4__two-colons-row">
         <div class="section__colon-left section-4__colon-left">
             <div class="section__subtitle section-1__colon-title"><?php echo $subtitle; ?></div>
             <div class="section__subtitle section-4__text"><?php echo apply_filters('the_content', $text); ?></div>

@@ -12,7 +12,7 @@ $button_link = demo_theme_get_acf_field('section2_button_link', $post_id, __('ht
 
 <section class="section section-2">
     <div class="section__title section-2__title"><?php echo $title; ?></div>
-    <div class="section__two-colons section-2__two-colons">
+    <div class="section__two-colons-row section-2__two-colons-row">
         <div class="section__colon-left section-2__colon-left">
             <div class="section__image section-2__image">
                 <?php demo_theme_the_picture_section('big-image-2.png', 'big-image-2-mob.png', __('Big image 2', 'demo-theme'));?>
