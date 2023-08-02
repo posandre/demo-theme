@@ -1,0 +1,24 @@
+.section-4 {
+  &__title {
+    text-align: center;
+    font-size: 52px;
+    font-weight: 800;
+    line-height: 1.30769;
+    letter-spacing: -0.182px;
+
+    margin-bottom: 60px;
+  }
+
+  &__colon {
+    &-left {
+      max-width: 487px;
+      flex: 0 0 487px;
+
+      margin-left: 93px;
+    }
+  }
+
+  &__two-colons-row {
+    padding-bottom: 120px;
+  }
+}

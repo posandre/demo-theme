@@ -42,6 +42,7 @@ body {
   &__title {
     &, h1 {
       text-align: center;
+      color: $h1_color;
     }
 
     h1 {
@@ -66,6 +67,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    max-width: 1440px;
+    margin: 0 auto;
 
     & + .section__two-colons-row {
       margin-top: 120px;
@@ -122,6 +126,13 @@ body {
       line-height: 1.5;
       text-transform: capitalize;
 
+      &:hover {
+        img {
+          transition: all 0.5s ease-out;
+          transform: scale(1.1);
+        }
+      }
+
       img {
         margin-right: 16px;
       }
@@ -158,6 +169,17 @@ body {
       border-radius: 32px;
 
       background-color: $blue_color;
+    }
+
+    &:hover {
+      background-color: white;
+      color: $blue_color;
+
+      border: 1px solid $blue_color;
+
+      text-decoration: none;
+
+      transition: all 0.5s ease-out;
     }
   }
 }
