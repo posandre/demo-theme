@@ -35,3 +35,45 @@ function demo_theme_pingback_header() {
 	}
 }
 add_action( 'wp_head', 'demo_theme_pingback_header' );
+
+/**
+ *  Get Acf field value
+ */
+function demo_theme_get_acf_field($selector,  $post_id, $default = '') {
+    if (empty($post_id)) $post_id = get_the_ID();
+
+    if( !class_exists('ACF') ) return $default;
+
+    $result = get_field($selector,$post_id);
+
+    if (empty($result)) return $default;
+
+    return $result;
+}
+
+/**
+ *  Get Theme image urls
+ */
+function demo_theme_get_image_url($image_name) {
+    return esc_attr(get_stylesheet_directory_uri() . '/images/' . $image_name);
+}
+
+
+/**
+ *  Get picture section
+ */
+function demo_theme_the_picture_section($image_name, $image_name_mob, $alt_text = '') {
+    if (
+        !empty($image_name) && file_exists(get_stylesheet_directory()  . '/images/' . $image_name) &&
+        !empty($image_name_mob) && file_exists(get_stylesheet_directory()  . '/images/' . $image_name_mob)
+    ) {
+        echo '
+        <picture>
+            <source media="(max-width: 639px)" srcset="' . demo_theme_get_image_url($image_name_mob) . '">
+            <img src="' . demo_theme_get_image_url($image_name) . '" alt="' . esc_attr($alt_text) . '" />
+        </picture>        
+        ';
+    } else {
+        echo '';
+    }
+}
