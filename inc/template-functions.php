@@ -69,7 +69,7 @@ function demo_theme_the_picture_section($image_name, $image_name_mob, $alt_text 
     ) {
         echo '
         <picture>
-            <source media="(max-width: 639px)" srcset="' . demo_theme_get_image_url($image_name_mob) . '">
+            <source media="(max-width: 1267px)" srcset="' . demo_theme_get_image_url($image_name_mob) . '">
             <img src="' . demo_theme_get_image_url($image_name) . '" alt="' . esc_attr($alt_text) . '" />
         </picture>        
         ';
