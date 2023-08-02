@@ -10,7 +10,7 @@ $text = demo_theme_get_acf_field('section4_text', $post_id, __('The benefits of 
 $button_link = demo_theme_get_acf_field('section4_button_link', $post_id, __('https://google.com', 'demo-theme'));
 ?>
 
-<section class="section section-4">
+<section class="section section--grey section-4">
     <div class="section__title section-4__title"><?php echo $title; ?></div>
     <div class="section__two-colons-row section-4__two-colons-row">
         <div class="section__colon-left section-4__colon-left">

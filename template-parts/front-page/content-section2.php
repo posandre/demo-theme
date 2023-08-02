@@ -6,7 +6,7 @@ $post_id = get_the_ID();
 
 $title = demo_theme_get_acf_field('section2_title', $post_id, __('A Better Way To Read', 'demo-theme'));
 $subtitle = demo_theme_get_acf_field('section2_subtitle', $post_id, __('Let the Gradients Guide Your Eyes', 'demo-theme'));
-$text = demo_theme_get_acf_field('section2_text', $post_id, __('The technology behind <strong>Reading Flow™</strong> is ingeniously simple. It applies a color gradient to the main body text of the page that reduces confusion and inadvertent line skips. The patented gradients wrap from the end of one line to the beginning of the next. This color grouping technique helps your eyes quickly locate the next line, significantly impact reading accuracy, speed and comprehension for people who spend a lot of time reading online as well as those with visual processing challenges, visual impairments, dyslexia, and learning disabilities.', 'demo-theme'));
+$text = demo_theme_get_acf_field('section2_text', $post_id, __('The technology behind <strong>Reading Flow™</strong> is ingeniously simple. It applies a color gradient to the main body text of the page that reduces confusion and inadvertent line skips. The patented gradients wrap from the end of one line to the beginning of<br> the next. This color grouping technique helps your eyes<br> quickly locate the next line, significantly impact reading<br> accuracy, speed and comprehension for people who spend a<br> lot of time reading online as well as those with visual<br>ß processing challenges, visual impairments, dyslexia, and<br> learning disabilities.', 'demo-theme'));
 $button_link = demo_theme_get_acf_field('section2_button_link', $post_id, __('https://google.com', 'demo-theme'));
 ?>
 
