@@ -1020,6 +1020,13 @@ body {
 .section {
   max-width: 1091px;
   margin: 0 auto; }
+  .section--grey {
+    margin-top: 120px;
+    padding-top: 120px;
+    max-width: unset;
+    background-color: #F3F5F9; }
+  .section__title, .section__title h1 {
+    text-align: center; }
   .section__title h1 {
     font-family: "OpenSans", serif;
     font-size: 56px;
@@ -1031,6 +1038,28 @@ body {
     margin-bottom: 25px; }
     .section__title h1 span {
       font-weight: 400; }
+  .section__two-colons-row {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .section__colon-right {
+    max-width: 519px;
+    flex: 0 0 519px;
+    margin-left: 85px; }
+  .section__colon-title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.6;
+    letter-spacing: 0.1px;
+    text-transform: capitalize;
+    margin-bottom: 12px; }
+  .section__colon-text {
+    padding-right: 7px;
+    margin-bottom: 32px; }
+    .section__colon-text p {
+      margin-top: 0; }
+      .section__colon-text p:last-child {
+        margin-bottom: 0; }
   .section__video-button {
     margin-bottom: 20px; }
   .section__video-link {
@@ -1044,15 +1073,15 @@ body {
     text-transform: capitalize; }
     .section__video-link img {
       margin-right: 16px; }
-  .section__button {
-    text-align: center; }
-    .section__button span {
-      display: inline-block;
-      line-height: 1.5;
-      color: #2E64F1;
-      margin-bottom: 12px; }
+  .section__button span {
+    display: inline-block;
+    line-height: 1.5;
+    color: #2E64F1;
+    margin-left: 12px;
+    margin-bottom: 12px; }
   .section__btn, .section__btn:visited {
     display: block;
+    max-width: fit-content;
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
@@ -1092,6 +1121,10 @@ body {
     margin-top: 61px; }
   .section-1__banner, .section-1__bottom {
     margin-top: 64px; }
+  .section-1__button {
+    text-align: center; }
+    .section-1__button span {
+      margin-left: 0; }
   .section-1__bottom-title {
     text-align: center;
     font-size: 52px;
@@ -1099,6 +1132,7 @@ body {
     line-height: 1.07692;
     letter-spacing: 0.1px;
     text-transform: capitalize;
+    color: #14121E;
     margin-bottom: 30px; }
   .section-1__bottom-text {
     max-width: 725px;
@@ -1109,3 +1143,12 @@ body {
       font-weight: 400;
       line-height: 1.777;
       letter-spacing: -0.243px; }
+
+.section-2__title {
+  font-size: 52px;
+  font-weight: 800;
+  line-height: 1.30769;
+  letter-spacing: -0.182px;
+  text-transform: capitalize;
+  color: #14121E;
+  margin-bottom: 60px; }

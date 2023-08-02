@@ -1,0 +1,13 @@
+.section-2 {
+  &__title {
+    font-size: 52px;
+    font-weight: 800;
+    line-height: 1.30769;
+    letter-spacing: -0.182px;
+    text-transform: capitalize;
+
+    color: $h1_color;
+
+    margin-bottom: 60px;
+  }
+}

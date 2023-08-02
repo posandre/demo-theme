@@ -46,6 +46,14 @@
     margin-top: 64px;
   }
 
+  &__button {
+    text-align: center;
+
+    span {
+      margin-left: 0;
+    }
+  }
+
   &__bottom {
     &-title {
       text-align: center;
@@ -55,6 +63,8 @@
       letter-spacing: 0.1px;
 
       text-transform: capitalize;
+
+      color: $h1_color;
 
       margin-bottom: 30px;
     }

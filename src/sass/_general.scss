@@ -30,7 +30,20 @@ body {
 
   margin: 0 auto;
 
+  &--grey {
+    margin-top: 120px;
+    padding-top: 120px;
+
+    max-width: unset;
+
+    background-color: $gray_color;
+  }
+
   &__title {
+    &, h1 {
+      text-align: center;
+    }
+
     h1 {
       font-family: "OpenSans", serif;
       font-size: 56px;
@@ -45,6 +58,46 @@ body {
 
       span {
         font-weight: 400;
+      }
+    }
+  }
+
+  &__two-colons-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  ;
+  }
+
+  &__colon {
+    &-right {
+      max-width: 519px;
+      flex: 0 0 519px;
+
+      margin-left: 85px;
+    }
+
+    &-title {
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 1.6;
+      letter-spacing: 0.1px;
+      text-transform: capitalize;
+
+      margin-bottom: 12px;
+    }
+
+    &-text {
+      padding-right: 7px;
+
+      margin-bottom: 32px;
+
+      p {
+        margin-top: 0;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
       }
     }
   }
@@ -73,8 +126,6 @@ body {
   }
 
   &__button {
-    text-align: center;
-
     span {
       display: inline-block;
 
@@ -82,6 +133,7 @@ body {
 
       color: $blue_color;
 
+      margin-left: 12px;
       margin-bottom: 12px;
     }
   }
@@ -89,6 +141,8 @@ body {
   &__btn {
     &, &:visited {
       display: block;
+
+      max-width: fit-content;
 
       font-size: 16px;
       font-style: normal;
