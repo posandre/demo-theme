@@ -167,3 +167,10 @@ require get_template_directory() . '/inc/template-functions.php';
  */
 require get_template_directory() . '/inc/customizer.php';
 
+/**
+ * Determined ACF Fields.
+ */
+if( class_exists('ACF') ) {
+    require get_template_directory() . '/inc/acf-fields.php';
+}
+
