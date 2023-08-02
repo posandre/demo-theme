@@ -447,7 +447,7 @@ add_action( 'acf/include_fields', function() {
                     'class' => '',
                     'id' => '',
                 ),
-                'default_value' => __('Get Reading Flow™ For Your Website Today', 'demo-theme'),
+                'default_value' => __('Get Reading Flow™<br> For Your Website Today', 'demo-theme'),
                 'maxlength' => '',
                 'placeholder' => '',
                 'prepend' => '',
