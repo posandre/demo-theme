@@ -346,6 +346,8 @@ h6 {
 
 p {
   margin-bottom: 1.5em; }
+  p:last-child {
+    margin-bottom: 0; }
 
 dfn,
 cite,
@@ -1042,6 +1044,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center; }
+    .section__two-colons-row + .section__two-colons-row {
+      margin-top: 120px; }
   .section__colon-right {
     max-width: 519px;
     flex: 0 0 519px;
@@ -1152,3 +1156,21 @@ body {
   text-transform: capitalize;
   color: #14121E;
   margin-bottom: 60px; }
+
+.section-3 {
+  margin-top: 120px; }
+  .section-3__title {
+    text-align: center;
+    font-size: 52px;
+    font-weight: 800;
+    line-height: 1.30769;
+    letter-spacing: -0.182px;
+    margin-bottom: 60px; }
+  .section-3 .section-3__two-colons-row-1 .section__colon-text {
+    max-width: 463px; }
+  .section-3 .section-3__two-colons-row-2 .section__colon-text {
+    max-width: 485px; }
+  .section-3__colon-right {
+    max-width: 528px;
+    flex: 0 0 528px;
+    margin-left: 93px; }
