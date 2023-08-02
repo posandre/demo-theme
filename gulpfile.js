@@ -1,22 +1,28 @@
-var gulp = require('gulp');
+const gulp = require('gulp');
 
-var sass = require('gulp-sass'),
-    concat  = require('gulp-concat'),
-    uglify  = require('gulp-uglify-es').default,
-    browserSync = require('browser-sync'),
-    sourcemaps = require('gulp-sourcemaps'),
-    del = require('del'),
-    notify = require('gulp-notify'),
-    plumber = require('gulp-plumber'),
-    autoprefixer= require('autoprefixer'),
-    postcss = require('gulp-postcss'),
-    strip = require('gulp-strip-comments'),
-    fileInclude = require('gulp-file-include'),
-    rename = require('gulp-rename'),
-    beepBeep = require('beepbeep');
+const   sass = require('gulp-sass'),
+        concat  = require('gulp-concat'),
+        uglify  = require('gulp-uglify-es').default,
+        browserSync = require('browser-sync'),
+        sourcemaps = require('gulp-sourcemaps'),
+        del = require('del'),
+        notify = require('gulp-notify'),
+        plumber = require('gulp-plumber'),
+        autoprefixer= require('autoprefixer'),
+        postcss = require('gulp-postcss'),
+        strip = require('gulp-strip-comments'),
+        fileInclude = require('gulp-file-include'),
+        rename = require('gulp-rename'),
+        beepBeep = require('beepbeep'),
+        ttf2woff = require('gulp-ttf2woff'),
+        ttf2woff2 = require('gulp-ttf2woff2'),
+        ttf2eot = require('gulp-ttf2eot');
+
+const path_build_fonts = 'fonts';
+const path_source_fonts = "src/fonts/**/**";
 
 // Gracefully handle Gulp errors
-var onError = function( err ) {
+let onError = function( err ) {
     beepBeep();
     console.log( 'An error occurred:', err.message );
     browserSync.notify(err.message, 3000);
@@ -39,9 +45,7 @@ gulp.task('browser-sync', function() {
 
 gulp.task('sass', function() {
     return gulp.src('src/sass/*.scss')
-        .pipe(sass(
-            {outputStyle: 'compressed'}
-        ))
+        .pipe(sass())
         .on('error', onError)
         .pipe(gulp.dest('css'))
         .pipe(notify({
@@ -52,13 +56,16 @@ gulp.task('sass', function() {
 });
 
 gulp.task('css', function() {
-    return gulp.src([
-        'css/style-main.css'
-    ])
+    return gulp.src('src/sass/*.scss')
+        .pipe(sass(
+            {outputStyle: 'compressed'}
+        ))
+        .on('error', onError)
         .pipe(plumber())
-        .pipe(concat('style-main.min.css'))
         .pipe(postcss([ autoprefixer() ]))
-        .pipe(sourcemaps.write('.'))
+        .pipe(concat('style-main.min.css'))
+        .pipe(sourcemaps.init())
+        .pipe(sourcemaps.write())
         .pipe(browserSync.stream())
         .pipe(gulp.dest('css'))
         .pipe(notify({
@@ -125,6 +132,40 @@ gulp.task('clean_css', function() {
     return del(['css/**', '!css']);
 });
 
+// Task to delete target build folder
+gulp.task('clean_fonts', function() {
+    return del(['fonts/**'], {force:true});
+});
+
+gulp.task('fonts_ttf', function() {
+    return gulp.src(path_source_fonts)
+               .pipe(gulp.dest(path_build_fonts))
+});
+
+// Task to convert TTF font into WOFF
+gulp.task('fonts_woff', function() {
+    return gulp.src(path_source_fonts)
+                .pipe(ttf2woff())
+                .pipe(gulp.dest(path_build_fonts));
+
+});
+
+// Task to convert TTF font into WOFF2
+gulp.task('fonts_woff2', function() {
+    return gulp.src(path_source_fonts)
+                .pipe(ttf2woff2())
+                .pipe(gulp.dest(path_build_fonts));
+
+});
+
+// Task to convert TTF font into EOT
+gulp.task('fonts_eot', function() {
+    return gulp.src(path_source_fonts)
+        .pipe( ttf2eot())
+        .pipe(gulp.dest(path_build_fonts));
+
+});
+
 // Watch tasks
 gulp.task('watch', gulp.series( function(){
     browserSync.init(null, {
@@ -139,4 +180,20 @@ gulp.task('watch', gulp.series( function(){
     gulp.watch("*.php", gulp.series(page_reload));
 }));
 
-gulp.task('default', gulp.series("clean_css", "clean_js", "sass", "css", "concat_scripts", "directly_scripts", "watch"));
+gulp.task(
+    'default',
+    gulp.series(
+        "clean_css",
+        "clean_js",
+        "sass",
+        "css",
+        "concat_scripts",
+        "directly_scripts",
+        "clean_fonts",
+        "fonts_ttf",
+        "fonts_woff",
+        "fonts_woff2",
+        "fonts_eot",
+        "watch"
+    )
+);
