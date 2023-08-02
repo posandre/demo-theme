@@ -18,7 +18,7 @@ $button_link = demo_theme_get_acf_field('section4_button_link', $post_id, __('ht
             <div class="section__subtitle section-4__text"><?php echo apply_filters('the_content', $text); ?></div>
             <div class="section__button section-4__button">
                 <span><?php _e('Get Reading Flow™', 'demo-theme'); ?></span>
-                <a class="section__btn section-4__btn" rel="nofollow" target="_blank" href="<?php esc_attr_e($section4_video_link); ?>"><?php _e('Start Free Trial', 'domo-theme');?></a>
+                <a class="section__btn section-4__btn" rel="nofollow" target="_blank" href="<?php esc_attr_e($button_link); ?>"><?php _e('Start Free Trial', 'domo-theme');?></a>
             </div>
         </div>
         <div class="section__colon-right section-4__colon-right">
