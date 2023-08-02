@@ -1,0 +1,106 @@
+body {
+  font-family: "Metropolis", serif;
+  font-size: 16px;
+  line-height: 1.75;
+
+  color: $black_color_1;
+}
+
+.marker {
+  display: inline-block;
+
+  font-weight: 800;
+
+  background-image: url(../images/marker-back.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+
+}
+
+.demo-theme {
+
+  &__container {
+    padding: 162px 0;
+
+  }
+}
+
+.section {
+  max-width: 1091px;
+
+  margin: 0 auto;
+
+  &__title {
+    h1 {
+      font-family: "OpenSans", serif;
+      font-size: 56px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 56px;
+      letter-spacing: -0.182px;
+
+      color: $h1_color;
+
+      margin-bottom: 25px;
+
+      span {
+        font-weight: 400;
+      }
+    }
+  }
+
+  &__video {
+
+    &-button {
+      margin-bottom: 20px;
+    }
+
+    &-link {
+      display: flex;
+      align-items: center;
+
+      text-align: center;
+      font-family: Metropolis, serif;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1.5;
+      text-transform: capitalize;
+
+      img {
+        margin-right: 16px;
+      }
+    }
+  }
+
+  &__button {
+    text-align: center;
+
+    span {
+      display: inline-block;
+
+      line-height: 1.5;
+
+      color: $blue_color;
+
+      margin-bottom: 12px;
+    }
+  }
+
+  &__btn {
+    &, &:visited {
+      display: block;
+
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 1.5;
+
+      color: white;
+
+      padding: 16px 24px;
+      border-radius: 32px;
+
+      background-color: $blue_color;
+    }
+  }
+}

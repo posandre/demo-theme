@@ -70,7 +70,7 @@ main {
  */
 h1 {
   font-size: 2em;
-  margin: 0.67em 0;
+  margin: 0;
 }
 
 /* Grouping content
@@ -103,6 +103,11 @@ pre {
  */
 a {
   background-color: transparent;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 /**
@@ -509,17 +514,17 @@ table {
 /* Links
 --------------------------------------------- */
 a {
-  color: #4169e1;
+  color: $blue_color;
 }
 
 a:visited {
-  color: #800080;
+  color:$blue_color;
 }
 
 a:hover,
 a:focus,
 a:active {
-  color: #191970;
+  color: $blue_color;
 }
 
 a:focus {
