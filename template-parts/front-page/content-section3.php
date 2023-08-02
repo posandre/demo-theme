@@ -44,6 +44,5 @@ $button_link_2 = demo_theme_get_acf_field('section3_button_2_link', $post_id, __
                 <a class="section__btn section-3__btn" rel="nofollow" target="_blank" href="<?php esc_attr_e($button_link_2); ?>"><?php _e('Start Free Trial', 'domo-theme');?></a>
             </div>
         </div>
-        </div>
     </div>
 </section>
