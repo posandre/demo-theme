@@ -13,7 +13,7 @@ add_action( 'acf/include_fields', function() {
                 'label' => 'Title',
                 'name' => 'section1_title',
                 'aria-label' => '',
-                'type' => 'text',
+                'type' => 'wysiwyg',
                 'instructions' => '',
                 'required' => 0,
                 'conditional_logic' => 0,
@@ -22,7 +22,7 @@ add_action( 'acf/include_fields', function() {
                     'class' => '',
                     'id' => '',
                 ),
-                'default_value' => __('Reading Flow™', 'demo-theme'),
+                'default_value' => __('Reading Flow<span>™</span>', 'demo-theme'),
                 'maxlength' => '',
                 'placeholder' => '',
                 'prepend' => '',
@@ -139,9 +139,9 @@ add_action( 'acf/include_fields', function() {
                     'class' => '',
                     'id' => '',
                 ),
-                'default_value' => __('<strong>Reading Flow™</strong> works by using a simple cognitive trick — an eye-guiding color gradient — to pull your eyes through long blocks of text, helping improve focus, concentrating and reading speed.
-The Intel-backed technology has won awards from the United Nations and Stanford University, and has been adopted by top US colleges and universities. The technology has also received widespread recognition by Scientific American, the United Nations and Google who hail BeeLine for its benefits to people with ADHD, Dyslexia and as a general tool to i<strong>mprove reading speed & comprehension</strong> for everyone.
-<strong>Reading Flow™</strong> is the latest addition to the best-in-class accessibility functions offered by UserWay.', 'demo-theme'),
+                'default_value' => __('<p><strong>Reading Flow™</strong> works by using a simple cognitive trick — an eye-guiding color gradient — to pull your eyes through long blocks of text, helping improve focus, concentrating and reading speed.</p>
+<p>The Intel-backed technology has won awards from the United Nations and Stanford University, and has been adopted by top US colleges and universities. The technology has also received widespread recognition by Scientific American, the United Nations and Google who hail BeeLine for its benefits to people with ADHD, Dyslexia and as a general tool to i<strong>mprove reading speed & comprehension</strong> for everyone.</p>
+<p><strong>Reading Flow™</strong> is the latest addition to the best-in-class accessibility functions offered by UserWay.</p>', 'demo-theme'),
                 'maxlength' => '',
                 'rows' => '',
                 'placeholder' => '',
