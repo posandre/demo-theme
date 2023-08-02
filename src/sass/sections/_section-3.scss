@@ -1,0 +1,30 @@
+.section-3 {
+  margin-top: 120px;
+
+  &__title {
+    text-align: center;
+    font-size: 52px;
+    font-weight: 800;
+    line-height: 1.30769;
+    letter-spacing: -0.182px;
+
+    margin-bottom: 60px;
+  }
+
+  .section-3__two-colons-row-1 .section__colon-text {
+    max-width: 463px;
+  }
+
+  .section-3__two-colons-row-2 .section__colon-text {
+    max-width: 485px;
+  }
+
+  &__colon {
+    &-right {
+      max-width: 528px;
+      flex: 0 0 528px;
+
+      margin-left: 93px;
+    }
+  }
+}
