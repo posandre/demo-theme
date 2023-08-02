@@ -19,7 +19,7 @@ $button_link = demo_theme_get_acf_field('section2_button_link', $post_id, __('ht
             </div>
         </div>
         <div class="section__colon-right section-2__colon-right">
-            <div class="section__subtitle section-1__colon-title"><?php echo $subtitle; ?></div>
+            <div class="section__subtitle section-2__colon-title"><?php echo $subtitle; ?></div>
             <div class="section__subtitle section-2__text"><?php echo apply_filters('the_content', $text); ?></div>
             <div class="section__button section-2__button">
                 <span><?php _e('Get Reading Flow™', 'demo-theme'); ?></span>
