@@ -816,14 +816,14 @@ textarea {
 @font-face {
   font-family: "Metropolis";
   font-display: swap;
-  src: url("../fonts/Metropolis/Metropolis-ExtraLight.woff2") format("woff2"), url("../fonts/Metropolis/Metropolis-ExtraLight.woff") format("woff"), url("../fonts/Metropolis/Metropolis-ExtraLight..eot"), url("../fonts/Metropolis/Metropolis-ExtraLight..eot?#iefix") format("embedded-opentype"), url("../fonts/Metropolis/Metropolis-ExtraLight.ttf");
+  src: url("../fonts/Metropolis/Metropolisextralight.woff2") format("woff2"), url("../fonts/Metropolis/Metropolisextralight.woff") format("woff"), url("../fonts/Metropolis/Metropolisextralight..eot"), url("../fonts/Metropolis/Metropolisextralight..eot?#iefix") format("embedded-opentype"), url("../fonts/Metropolis/Metropolisextralight.ttf");
   font-weight: 200;
   font-style: normal; }
 
 @font-face {
   font-family: "Metropolis";
   font-display: swap;
-  src: url("../fonts/Metropolis/Metropolis-ExtraLightItalic.woff2") format("woff2"), url("../fonts/Metropolis/Metropolis-ExtraLightItalic.woff") format("woff"), url("../fonts/Metropolis/Metropolis-ExtraLightItalic..eot"), url("../fonts/Metropolis/Metropolis-ExtraLightItalic..eot?#iefix") format("embedded-opentype"), url("../fonts/Metropolis/Metropolis-ExtraLightItalic.ttf");
+  src: url("../fonts/Metropolis/Metropolisextralightitalic.woff2") format("woff2"), url("../fonts/Metropolis/Metropolisextralightitalic.woff") format("woff"), url("../fonts/Metropolis/Metropolisextralightitalic..eot"), url("../fonts/Metropolis/Metropolisextralightitalic..eot?#iefix") format("embedded-opentype"), url("../fonts/Metropolis/Metropolisextralightitalic.ttf");
   font-weight: 200;
   font-style: italic; }
 
