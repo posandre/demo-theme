@@ -6,7 +6,7 @@
 $post_id = get_the_ID();
 
 $title = demo_theme_get_acf_field('section1_title', $post_id, __('Reading Flow<span>™</span>', 'demo-theme'));
-$subtitle = demo_theme_get_acf_field('section1_subtitle', $post_id, __('A patented technology that improves reading speed and accuracy. <span class="marker">Now on UserWay</span>.', 'demo-theme'));
+$subtitle = demo_theme_get_acf_field('section1_subtitle', $post_id, __('A patented technology that improves reading speed and accuracy. <span class="marker">Now on UserWay</span>', 'demo-theme'));
 $text = demo_theme_get_acf_field('section1_text', $post_id, __('UserWay is proud to partner with Beeline Reader to offer <strong>Reading Flow™</strong>, a patented text display innovation that makes reading on-screen texts easier, faster, and more enjoyable.', 'demo-theme'));
 $video_link = demo_theme_get_acf_field('section1_video_link', $post_id, __('https://google.com', 'demo-theme'));
 $button_link = demo_theme_get_acf_field('section1_button_link', $post_id, __('https://google.com', 'demo-theme'));

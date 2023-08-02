@@ -7,6 +7,13 @@
     letter-spacing: -0.182px;
 
     margin-bottom: 60px;
+
+    @media screen and (max-width: 1267px) {
+      font-size: 30px;
+      line-height: 1.33;
+
+      margin-bottom: 32px;
+    }
   }
 
   &__colon {
@@ -15,10 +22,21 @@
       flex: 0 0 487px;
 
       margin-left: 93px;
+
+      @media screen and (max-width: 1267px) {
+        margin-left: 0;
+
+        max-width: 100%;
+        flex: 0 0 100%;
+      }
     }
   }
 
   &__two-colons-row {
     padding-bottom: 120px;
+
+    @media screen and (max-width: 1267px) {
+      flex-direction: column-reverse;
+    }
   }
 }

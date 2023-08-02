@@ -4,10 +4,17 @@ body {
   line-height: 1.75;
 
   color: $black_color_1;
+
+  margin-bottom: 20px;
+
+  @media screen and (max-width: 1267px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .marker {
-  display: inline-block;
+  display: block;
 
   font-weight: 800;
 
@@ -22,6 +29,9 @@ body {
   &__container {
     padding: 162px 0;
 
+    @media screen and (max-width: 1267px) {
+      padding: 185px 0;
+    }
   }
 }
 
@@ -30,6 +40,10 @@ body {
 
   margin: 0 auto;
 
+  @media screen and (max-width: 1267px) {
+    padding: 0 20px;
+  }
+
   &--grey {
     margin-top: 120px;
     padding-top: 120px;
@@ -37,6 +51,11 @@ body {
     max-width: unset;
 
     background-color: $gray_color;
+
+    @media screen and (max-width: 1267px) {
+      margin-top: 60px;
+      padding: 60px 0;
+    }
   }
 
   &__title {
@@ -56,6 +75,13 @@ body {
 
       margin-bottom: 25px;
 
+      @media screen and (max-width: 1267px) {
+        font-size: 32px;
+        line-height: 1.3125;
+
+        margin-bottom: 24px;
+      }
+
       span {
         font-weight: 400;
       }
@@ -70,6 +96,14 @@ body {
     max-width: 1440px;
     margin: 0 auto;
 
+    @media screen and (max-width: 1267px) {
+      flex-direction: column;
+
+      padding: 0 20px;
+
+      max-width: 768px;
+    }
+
     & + .section__two-colons-row {
       margin-top: 120px;
     }
@@ -81,6 +115,13 @@ body {
       flex: 0 0 519px;
 
       margin-left: 85px;
+
+      @media screen and (max-width: 1267px) {
+        margin-left: 0;
+
+        max-width: 100%;
+        flex: 0 0 100%;
+      }
     }
 
     &-title {
@@ -91,12 +132,29 @@ body {
       text-transform: capitalize;
 
       margin-bottom: 12px;
+
+      @media screen and (max-width: 1267px) {
+        font-size: 20px;
+        line-height: 1.8;
+
+        margin-bottom: 16px;
+      }
     }
 
     &-text {
       padding-right: 7px;
 
       margin-bottom: 32px;
+
+      @media screen and (max-width: 1267px) {
+        padding-right: 0;
+
+        margin-bottom: 24px;
+
+        br {
+          display: none;
+        }
+      }
 
       p {
         margin-top: 0;
@@ -112,6 +170,10 @@ body {
 
     &-button {
       margin-bottom: 20px;
+
+      @media screen and (max-width: 1267px) {
+        margin-bottom: 16px;
+      }
     }
 
     &-link {
@@ -125,6 +187,11 @@ body {
       line-height: 1.5;
       text-transform: capitalize;
 
+      @media screen and (max-width: 1267px) {
+        font-size: 14px;
+        line-height: 1.71;
+      }
+
       &:hover {
         img {
           transition: all 0.5s ease-out;
@@ -134,11 +201,20 @@ body {
 
       img {
         margin-right: 16px;
+
+        @media screen and (max-width: 1267px) {
+          width: 56px;
+          height: 56px;
+        }
       }
     }
   }
 
   &__button {
+    @media screen and (max-width: 1267px) {
+      text-align: center;
+    }
+
     span {
       display: inline-block;
 
@@ -162,12 +238,25 @@ body {
       font-weight: 700;
       line-height: 1.5;
 
+      text-align: center;
+
       color: white;
 
       padding: 16px 24px;
       border-radius: 32px;
 
       background-color: $blue_color;
+
+      @media screen and (max-width: 1267px) {
+        max-width: fit-content;
+
+        min-width: 275px;
+
+        margin: 0 auto;
+
+        font-size: 14px;
+        line-height: 1.71;
+      }
     }
 
     &:hover {

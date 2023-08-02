@@ -7,5 +7,12 @@
     text-transform: capitalize;
 
     margin-bottom: 60px;
+
+    @media screen and (max-width: 1267px) {
+      font-size: 30px;
+      line-height: 1.33;
+
+      margin-bottom: 32px;
+    }
   }
 }

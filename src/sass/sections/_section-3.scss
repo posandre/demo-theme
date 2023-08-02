@@ -9,10 +9,22 @@
     letter-spacing: -0.182px;
 
     margin-bottom: 60px;
+
+    @media screen and (max-width: 1267px) {
+      font-size: 30px;
+      line-height: 1.33;
+
+      margin-bottom: 32px;
+    }
   }
 
-  .section-3__two-colons-row-1 .section__colon-text {
-    max-width: 463px;
+  .section-3__two-colons-row-1 {
+    @media screen and (max-width: 1267px) {
+      flex-direction: column-reverse;
+    }
+    .section__colon-text {
+      max-width: 463px;
+    }
   }
 
   .section-3__two-colons-row-2 .section__colon-text {
@@ -25,6 +37,13 @@
       flex: 0 0 528px;
 
       margin-left: 93px;
+
+      @media screen and (max-width: 1267px) {
+        margin-left: 0;
+
+        max-width: 100%;
+        flex: 0 0 100%;
+      }
     }
   }
 }
