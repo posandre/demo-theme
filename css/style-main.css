@@ -1159,6 +1159,7 @@ body {
     color: white;
     padding: 16px 24px;
     border-radius: 32px;
+    border: 1px solid #2E64F1;
     background-color: #2E64F1; }
     @media screen and (max-width: 1267px) {
       .section__btn, .section__btn:visited {
@@ -1170,7 +1171,6 @@ body {
   .section__btn:hover {
     background-color: white;
     color: #2E64F1;
-    border: 1px solid #2E64F1;
     text-decoration: none;
     transition: all 0.5s ease-out; }
 
