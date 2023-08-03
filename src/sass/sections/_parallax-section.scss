@@ -1,0 +1,20 @@
+.parallax-section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  //height: calc(100% - 121px);
+  max-height: fit-content;
+  z-index: 1;
+
+  &__empty {
+    height: 100vh;
+    pointer-events: none;
+    width: 100%;
+    background-color: transparent;
+  }
+
+  &.hidden {
+    visibility: hidden;
+  }
+}

@@ -13,35 +13,37 @@ $button_link_1 = demo_theme_get_acf_field('section3_button_1_link', $post_id, __
 $button_link_2 = demo_theme_get_acf_field('section3_button_2_link', $post_id, __('https://google.com', 'demo-theme'));
 ?>
 
-<section class="section section-3">
-    <div class="section__title section-3__title"><?php echo $title; ?></div>
-    <div class="section__two-colons-row section-3__two-colons-row section-3__two-colons-row-1">
-        <div class="section__colon-left section-3__colon-left">
-            <div class="section__colon-title section-1__colon-title"><?php echo $subtitle_1; ?></div>
-            <div class="section__colon-text section-3__text"><?php echo apply_filters('the_content', $text_1); ?></div>
-            <div class="section__button section-3__button">
-                <span><?php _e('Get Reading Flow™', 'demo-theme'); ?></span>
-                <a class="section__btn section-3__btn" rel="nofollow" target="_blank" href="<?php esc_attr_e($button_link_1); ?>"><?php _e('Start Free Trial', 'domo-theme');?></a>
+<section class="section-container">
+    <div class="section section-3">
+        <div class="section__title section-3__title"><?php echo $title; ?></div>
+        <div class="section__two-colons-row section-3__two-colons-row section-3__two-colons-row-1">
+            <div class="section__colon-left section-3__colon-left">
+                <div class="section__colon-title section-1__colon-title"><?php echo $subtitle_1; ?></div>
+                <div class="section__colon-text section-3__text"><?php echo apply_filters('the_content', $text_1); ?></div>
+                <div class="section__button section-3__button">
+                    <span><?php _e('Get Reading Flow™', 'demo-theme'); ?></span>
+                    <a class="section__btn section-3__btn" rel="nofollow" target="_blank" href="<?php esc_attr_e($button_link_1); ?>"><?php _e('Start Free Trial', 'domo-theme');?></a>
+                </div>
+            </div>
+            <div class="section__colon-right section-3__colon-right">
+                <div class="section__image section-3__image">
+                    <?php demo_theme_the_picture_section('big-image-3-1.png', 'big-image-3-1-mob.png', __('Big image 3-1', 'demo-theme'));?>
+                </div>
             </div>
         </div>
-        <div class="section__colon-right section-3__colon-right">
-            <div class="section__image section-3__image">
-                <?php demo_theme_the_picture_section('big-image-3-1.png', 'big-image-3-1-mob.png', __('Big image 3-1', 'demo-theme'));?>
+        <div class="section__two-colons-row section-3__two-colons-row section-3__two-colons-row-2">
+            <div class="section__colon-left section-3__colon-left">
+                <div class="section__image section-3__image">
+                    <?php demo_theme_the_picture_section('big-image-3.png', 'big-image-3-mob.png', __('Big image 3', 'demo-theme'));?>
+                </div>
             </div>
-        </div>
-    </div>
-    <div class="section__two-colons-row section-3__two-colons-row section-3__two-colons-row-2">
-        <div class="section__colon-left section-3__colon-left">
-            <div class="section__image section-3__image">
-                <?php demo_theme_the_picture_section('big-image-3.png', 'big-image-3-mob.png', __('Big image 3', 'demo-theme'));?>
-            </div>
-        </div>
-        <div class="section__colon-right section-3__colon-right">
-            <div class="section__colon-title section-1__colon-title"><?php echo $subtitle_2; ?></div>
-            <div class="section__colon-text section-3__text"><?php echo apply_filters('the_content', $text_2); ?></div>
-            <div class="section__button section-3__button">
-                <span><?php _e('Get Reading Flow™', 'demo-theme'); ?></span>
-                <a class="section__btn section-3__btn" rel="nofollow" target="_blank" href="<?php esc_attr_e($button_link_2); ?>"><?php _e('Start Free Trial', 'domo-theme');?></a>
+            <div class="section__colon-right section-3__colon-right">
+                <div class="section__colon-title section-1__colon-title"><?php echo $subtitle_2; ?></div>
+                <div class="section__colon-text section-3__text"><?php echo apply_filters('the_content', $text_2); ?></div>
+                <div class="section__button section-3__button">
+                    <span><?php _e('Get Reading Flow™', 'demo-theme'); ?></span>
+                    <a class="section__btn section-3__btn" rel="nofollow" target="_blank" href="<?php esc_attr_e($button_link_2); ?>"><?php _e('Start Free Trial', 'domo-theme');?></a>
+                </div>
             </div>
         </div>
     </div>

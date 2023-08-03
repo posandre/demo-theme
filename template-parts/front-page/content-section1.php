@@ -17,28 +17,30 @@ $bottom_text = demo_theme_get_acf_field('section1_bottom_text', $post_id, __('<p
 
 ?>
 
-<section class="section section-1">
-    <div class="section__title section-1__title"><h1><?php echo $title; ?></h1></div>
-    <div class="section__subtitle section-1__subtitle"><?php echo $subtitle; ?></div>
-    <div class="section__subtitle section-1__text"><?php echo apply_filters('the_content', $text); ?></div>
-    <div class="section__video-button section-1__button">
-        <a class="section__video-link section-1__link" rel="nofollow" target="_blank" href="<?php esc_attr_e($button_link); ?>">
-            <img width="72" height="72" alt="<?php esc_attr_e('Play buimage', 'demo-theme');?>" src="<?php echo demo_theme_get_image_url('video-play-back.svg'); ?>">
-            <?php _e('Watch the video', 'demo-theme'); ?>
-        </a>
-    </div>
-    <div class="section__button section-1__button">
-        <span><?php _e('Get Reading Flow™', 'demo-theme'); ?></span>
-        <a class="section__btn section-1__btn" rel="nofollow" target="_blank" href="<?php esc_attr_e($video_link); ?>"><?php _e('Start Free Trial', 'domo-theme');?></a>
-    </div>
-    <div class="section__image section-1__image">
-        <?php demo_theme_the_picture_section('big-image-1.png', 'big-image-1-mob.png', __('Big image 1', 'demo-theme'));?>
-    </div>
-    <div class="section__banner section-1__banner">
-        <?php demo_theme_the_picture_section('banner-image-1.png', 'banner-image-1-mob.png', __('Big image 1', 'demo-theme'));?>
-    </div>
-    <div class="section__bottom section-1__bottom">
-        <div class="section-1__bottom-title"><?php echo $bottom_title; ?></div>
-        <div class="section-1__bottom-text"><?php echo apply_filters('the_content', $bottom_text); ?></div>
+<section class="section-container">
+    <div class="section section-1">
+        <div class="section__title section-1__title"><h1><?php echo $title; ?></h1></div>
+        <div class="section__subtitle section-1__subtitle"><?php echo $subtitle; ?></div>
+        <div class="section__subtitle section-1__text"><?php echo apply_filters('the_content', $text); ?></div>
+        <div class="section__video-button section-1__button">
+            <a class="section__video-link section-1__link" rel="nofollow" target="_blank" href="<?php esc_attr_e($button_link); ?>">
+                <img width="72" height="72" alt="<?php esc_attr_e('Play buimage', 'demo-theme');?>" src="<?php echo demo_theme_get_image_url('video-play-back.svg'); ?>">
+                <?php _e('Watch the video', 'demo-theme'); ?>
+            </a>
+        </div>
+        <div class="section__button section-1__button">
+            <span><?php _e('Get Reading Flow™', 'demo-theme'); ?></span>
+            <a class="section__btn section-1__btn" rel="nofollow" target="_blank" href="<?php esc_attr_e($video_link); ?>"><?php _e('Start Free Trial', 'domo-theme');?></a>
+        </div>
+        <div class="section__image section-1__image">
+            <?php demo_theme_the_picture_section('big-image-1.png', 'big-image-1-mob.png', __('Big image 1', 'demo-theme'));?>
+        </div>
+        <div class="section__banner section-1__banner">
+            <?php demo_theme_the_picture_section('banner-image-1.png', 'banner-image-1-mob.png', __('Big image 1', 'demo-theme'));?>
+        </div>
+        <div class="section__bottom section-1__bottom">
+            <div class="section-1__bottom-title"><?php echo $bottom_title; ?></div>
+            <div class="section-1__bottom-text"><?php echo apply_filters('the_content', $bottom_text); ?></div>
+        </div>
     </div>
 </section>
