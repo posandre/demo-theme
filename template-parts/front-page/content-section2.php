@@ -11,7 +11,7 @@ $button_link = demo_theme_get_acf_field('section2_button_link', $post_id, __('ht
 ?>
 
 <div class="parallax-section__empty"></div>
-<section class="section parallax-section section--grey section-2">
+<section class="section parallax-section hidden section--grey section-2">
     <div class="section__title section-2__title"><?php echo $title; ?></div>
     <div class="section__two-colons-row section-2__two-colons-row">
         <div class="section__colon section__colon-left section-2__colon-left">
